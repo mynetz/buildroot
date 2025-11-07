@@ -11,8 +11,15 @@ LIBNVME_LICENSE_FILES = COPYING
 LIBNVME_INSTALL_STAGING = YES
 
 LIBNVME_CONF_OPTS += \
-	-Dexamples=false \
 	-Dtests=false
+
+ifeq ($(BR2_PACKAGE_LIBNVME_EXAMPLES),y)
+LIBNVME_CONF_OPTS += \
+	-Dexamples=true
+else
+LIBNVME_CONF_OPTS += \
+	-Dexamples=false
+endif
 
 ifeq ($(BR2_PACKAGE_PYTHON3),y)
 LIBNVME_DEPENDENCIES += python3 host-swig

@@ -6,3 +6,15 @@ config BR2_PACKAGE_LIBNVME
 	  and utilities for nvme devices handling in Linux.
 
 	  https://github.com/linux-nvme/libnvme
+
+if BR2_PACKAGE_LIBNVME
+
+config BR2_PACKAGE_LIBNVME_EXAMPLES
+	bool "libnvme examples"
+	default n
+	help
+	  Include the example from libnvme
+
+	  https://github.com/linux-nvme/libnvme/tree/v1.15/examples
+
+endif
