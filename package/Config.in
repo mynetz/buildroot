@@ -1,5 +1,4 @@
 menu "Target packages"
-
 	source "package/busybox/Config.in"
 	source "package/skeleton/Config.in"
 	source "package/skeleton-custom/Config.in"
@@ -549,6 +548,7 @@ endmenu
 	source "package/mali-driver/Config.in"
 	source "package/mali-t76x/Config.in"
 	source "package/mbpfan/Config.in"
+	source "package/mctp/Config.in"
 	source "package/mdadm/Config.in"
 	source "package/mdevd/Config.in"
 	source "package/mdio-tools/Config.in"
