@@ -10,3 +10,13 @@
 		reg = <(0x10 | I2C_OWN_SLAVE_ADDRESS)>;
 	};
 };
+
+&i2c2 {
+	multi-master;
+	mctp-controller;
+
+	mctp@20 {
+		compatible = "mctp-i2c-controller";
+		reg = <(0x20 | I2C_OWN_SLAVE_ADDRESS)>;
+	};
+};

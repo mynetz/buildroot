@@ -15,6 +15,4 @@ config BR2_PACKAGE_LIBNVME_EXAMPLES
 	help
 	  Include the example from libnvme
 
-	  https://github.com/linux-nvme/libnvme/tree/v1.15/examples
-
 endif

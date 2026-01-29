@@ -8,6 +8,7 @@ BR2_SYSTEM_DHCP="eth0"
 BR2_ROOTFS_POST_IMAGE_SCRIPT="board/aspeed/common/post-image.sh"
 BR2_LINUX_KERNEL=y
 BR2_LINUX_KERNEL_DEFCONFIG="aspeed_g5"
+BR2_LINUX_KERNEL_CONFIG_FRAGMENT_FILES="board/aspeed/ast2600-evb/linux-nmi.fragment"
 BR2_LINUX_KERNEL_DTS_SUPPORT=y
 BR2_LINUX_KERNEL_INTREE_DTS_NAME="aspeed/aspeed-ast2600-evb-nmi"
 BR2_LINUX_KERNEL_CUSTOM_DTS_DIR="board/aspeed/ast2600-evb/dts"
